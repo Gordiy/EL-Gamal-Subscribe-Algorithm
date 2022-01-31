@@ -2,6 +2,7 @@ from random import randint
 
 
 def _gcd(a: int,b: int) -> int:
+    """Compute the greatest common divisor of a and b"""
     while b != 0:
         a, b = b, a % b
     return a
