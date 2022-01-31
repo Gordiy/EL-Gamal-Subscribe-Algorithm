@@ -1,14 +1,13 @@
 import math
-from random import randint
 
 
-def generate_random_prime_num(x: int, y: int) -> int:
+def generate_random_prime_num(x: int, y: int) -> list:
     """
-    Generate random prime number
+    Generate prime numbers list
     
     :param x: starting range
     :param y: ending range
-    :return: random prime number in range from x to y
+    :return: prime numbers list in range from x to y
     """
     prime_list = []
     for i in range(x, y):
@@ -22,4 +21,4 @@ def generate_random_prime_num(x: int, y: int) -> int:
                 prime_list.append(i)
 
     
-    return prime_list[randint(0, len(prime_list)-1)]
+    return prime_list
